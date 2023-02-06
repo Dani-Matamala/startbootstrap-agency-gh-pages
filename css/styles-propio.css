@@ -1,7 +1,40 @@
 .plan{
-    background: #f4ca59;
+    background: #f8f7f5;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+.plan:hover{
+    box-shadow: 0px 0px 16px 2px black
+}
+
+.plan h3{
+    margin-top: 2rem;
+    color: #f4ca59;
+    font-size: 3rem;
 }
 
 .plan ul{
     list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style-type: ' ➤ ';
+}
+
+.plan li{
+    list-style-type: ' ➤ ';
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: start;
+}
+
+.plan a{
+    border: 1px solid black ;
+    background-color:  #f4ca59;
+    color: white
 }
