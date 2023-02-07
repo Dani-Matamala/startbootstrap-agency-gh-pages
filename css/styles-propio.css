@@ -3,7 +3,7 @@
     border: 1px solid black;
     border-radius: 20px;
     margin: 3rem;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 .plan:hover{
@@ -11,15 +11,13 @@
 }
 
 .plan h3{
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #f4ca59;
     font-size: 3rem;
 }
 
 .plan ul{
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     list-style-type: ' ➤ ';
 }
 
