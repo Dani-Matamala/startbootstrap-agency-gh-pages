@@ -5,6 +5,8 @@
     border-radius: 20px;
     margin: 3rem;
     padding: 2.5rem;
+    width: 28rem; 
+    height:46rem
 }
 
 .plan:hover{
@@ -37,3 +39,24 @@
     background-color:  #f4ca59;
     color: white
 }
+
+@media (max-width:375px) {
+    .plan{
+        margin-top: 1rem;
+        width: 18rem;
+        height: 20rem;
+    }
+    .plan ul{
+        display: none;
+    }
+    .plan h3{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #social-media-nav {
+      display: none;
+    }
+  }
