@@ -60,3 +60,15 @@
       display: none;
     }
   }
+
+.contact{
+    margin-top: 2rem;
+}
+
+.contact-item{
+    font-family: "Roboto Slab", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.contact-item span{
+    margin: 0.5rem;
+}
