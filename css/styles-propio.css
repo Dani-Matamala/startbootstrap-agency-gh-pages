@@ -40,7 +40,7 @@
     color: white
 }
 
-@media (max-width:375px) {
+@media (max-width:425px) {
     .plan{
         margin-top: 1rem;
         width: 18rem;
