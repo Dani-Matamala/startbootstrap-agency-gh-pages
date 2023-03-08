@@ -51,4 +51,27 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    //Leer los datos desde la API-Manejar
+    const url = "http://localhost:3000/prices";
+
+async function fetchData() {
+    try {
+        const response = await fetch('http://localhost:3000/prices', {
+          method: 'GET',
+          mode: 'cors',
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+           }
+        });
+        // console.log(response)
+         const data = await response.json();
+        // Manipula los datos devueltos por la API aquí
+         console.log(data)
+      } catch (error) {
+        console.error(error);
+      }
+}
+
+fetchData();
+
 });
