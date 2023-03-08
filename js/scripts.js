@@ -63,10 +63,12 @@ async function fetchData() {
             'Access-Control-Allow-Origin': '*'
            }
         });
-        // console.log(response)
+    
          const data = await response.json();
         // Manipula los datos devueltos por la API aquí
-         console.log(data)
+        //  console.log(data)
+        document.querySelector('#price_parcial').textContent = `$ ${data[0]?.price}`;
+        document.querySelector('#price_completo').textContent = `$ ${data[1]?.price}`;
       } catch (error) {
         console.error(error);
       }
