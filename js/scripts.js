@@ -51,4 +51,29 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    //Leer los datos desde la API-Manejar
+    const url = "http://localhost:3000/prices";
+
+async function fetchData() {
+    try {
+        const response = await fetch('http://localhost:3000/prices', {
+          method: 'GET',
+          mode: 'cors',
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+           }
+        });
+    
+         const data = await response.json();
+        // Manipula los datos devueltos por la API aquí
+        //  console.log(data)
+        document.querySelector('#price_parcial').textContent = `$ ${data[0]?.price}`;
+        document.querySelector('#price_completo').textContent = `$ ${data[1]?.price}`;
+      } catch (error) {
+        console.error(error);
+      }
+}
+
+fetchData();
+
 });
