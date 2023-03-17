@@ -469,7 +469,7 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form id="contactForm" method="post" action="mailer.php">
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
@@ -477,6 +477,7 @@
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Nombre y Apellido *"
                   data-sb-validations="required"
@@ -490,6 +491,7 @@
                 <input
                   class="form-control"
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="email *"
                   data-sb-validations="required,email"
@@ -506,6 +508,7 @@
                 <input
                   class="form-control"
                   id="phone"
+                  name="phone"
                   type="tel"
                   placeholder="Telefono *"
                   data-sb-validations="required"
@@ -521,6 +524,7 @@
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   placeholder="Tu mensaje *"
                   data-sb-validations="required"
                 ></textarea>
@@ -559,7 +563,7 @@
           <!-- Submit Button-->
           <div class="text-center">
             <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
+              class="btn btn-primary btn-xl text-uppercase"
               id="submitButton"
               type="submit"
             >
