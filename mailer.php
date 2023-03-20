@@ -16,7 +16,7 @@ $mail = new PHPMailer;
 
 $mail->SMTPDebug = 2;
 $mail->Host = '';
-$mail->Port = ;
+$mail->Port = '';
 $mail->SMTPAuth = true;
 $mail->Username = '';
 $mail->Password = '';
