@@ -1,10 +1,12 @@
-body{
-    background-color: #f5f5f5;
+body {
+    background-color: #3d3d3d;
+    background-image: url("../assets/img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: "Montserrat";
-    color: black;
-    
-    
-}
+    color: #ffffff;
+  }
+  
 
 .center-text{
     display: flex;
