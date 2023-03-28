@@ -52,11 +52,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     //Leer los datos desde la API-Manejar
-    const url = "http://localhost:3000/prices";
+    const url = "http://37.44.247.123:3000/prices";
 
 async function fetchData() {
     try {
-        const response = await fetch('http://localhost:3000/prices', {
+        const response = await fetch(url, {
           method: 'GET',
           mode: 'cors',
           headers: {
